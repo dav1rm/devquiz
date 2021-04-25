@@ -13,6 +13,7 @@ class ScoreCardWidget extends StatelessWidget {
         decoration: BoxDecoration(
           color: AppColors.white,
           borderRadius: BorderRadius.circular(15),
+          border: Border.all(color: AppColors.border, width: 1.0),
         ),
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.center,
@@ -29,9 +30,12 @@ class ScoreCardWidget extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
-                      "Vamos começar",
-                      style: AppTextStyles.heading,
+                    Container(
+                      child: Text(
+                        "Vamos começar",
+                        style: AppTextStyles.heading,
+                      ),
+                      margin: EdgeInsets.only(bottom: 8),
                     ),
                     Text(
                       "Complete os desafios e avance em conhecimento",
