@@ -34,6 +34,12 @@ class AppTextStyles {
     fontWeight: FontWeight.w600,
   );
 
+  static final TextStyle heading20 = GoogleFonts.notoSans(
+    color: AppColors.black,
+    fontSize: 20,
+    fontWeight: FontWeight.w600,
+  );
+
   static final TextStyle body = GoogleFonts.notoSans(
     color: AppColors.grey,
     fontSize: 13,
@@ -82,6 +88,11 @@ class AppTextStyles {
   static final TextStyle body11 = GoogleFonts.notoSans(
     color: AppColors.grey,
     fontSize: 11,
+    fontWeight: FontWeight.normal,
+  );
+  static final TextStyle body15 = GoogleFonts.notoSans(
+    color: AppColors.lightGrey,
+    fontSize: 15,
     fontWeight: FontWeight.normal,
   );
 }
